@@ -31,7 +31,7 @@ def generate_launch_description():
 
     # Declare paramters for the grid_map_loader node
     loader_params = [{
-        'file_path': os.path.join(grid_map_demos_dir, 'data', 'grid_map_bag'),
+        'file_path': os.path.join(get_package_share_directory('grid_map_pcl'), 'test_data', 'elevation_map'),
         'bag_topic': '/grid_map',
         'publish_topic': '/grid_map',
         'duration': 10.0

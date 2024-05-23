@@ -5,14 +5,14 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     node_params = [
-        {'folder_path': 'path/to/pcd/file'},
-        {'pcd_filename': 'plane_noisy'},
+        {'folder_path': '/home/giri/Documents/Workspace/ws_athul/pointCloud'},
+        {'pcd_filename': 'landing_zone.pcd'},
         {'map_rosbag_topic': 'grid_map'},
-        {'output_grid_map': 'elevation_map.bag'},
+        {'output_grid_map': 'elevation_map'},
         {'map_frame': 'map'},
         {'map_layer_name': 'elevation'},
         {'prefix': ''},
-        {'set_verbosity_to_debug': False}
+        {'set_verbosity_to_debug': True}
     ]
 
     pcl_loader_node = Node(
