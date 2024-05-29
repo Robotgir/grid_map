@@ -5,8 +5,8 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     node_params = [
-        {'folder_path': '/home/giri/Documents/Workspace/ws_athul/pointCloud'},
-        {'pcd_filename': 'landing_zone.pcd'},
+        {'folder_path': '/home/giri/Documents/Workspace/ws_notdocker/src/pointcloud_files'},
+        {'pcd_filename': 'office.pcd'},
         {'map_rosbag_topic': 'grid_map'},
         {'output_grid_map': 'elevation_map'},
         {'map_frame': 'map'},
